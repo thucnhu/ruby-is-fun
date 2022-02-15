@@ -10,13 +10,26 @@
 
 ## Getting started
 
+### Installation
+
 Download and run the [RubyInstallers](https://rubyinstaller.org/downloads/) (Devkit version).
 
 Verify your Ruby version by running the following command: `ruby -v`
 
+### Set up VSCode
+
+If you are using VSCode:
+
+-  Install [Code Runner Extension](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+-  `Ctrl + Shift + P` and select `run by language`, then choose `ruby`
+
+### Run your first program in Ruby
+
+-  Create a new file called `hello.rb`
+-  In the file, write the following code: `puts "Hello, World!"`
+-  Run the file by typing `ruby hello.rb` in the terminal
+
 ## Resources to learn Ruby
 
-<ul>
-  <li>[FreeCodeCamp](https://youtu.be/t_ispmWmdjY)</li>
-  <li>[CodeCademy](https://www.codecademy.com/learn/learn-ruby)</li>
-</ul>
+-  [FreeCodeCamp](https://youtu.be/t_ispmWmdjY)
+-  [CodeCademy](https://www.codecademy.com/learn/learn-ruby)
