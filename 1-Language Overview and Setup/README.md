@@ -34,4 +34,5 @@ Verify your Ruby version by running the following command: `ruby -v`.
 ## References
 
 [1] https://developer.oracle.com/ruby/what-is-ruby/
+
 [2] https://stackoverflow.com/questions/54917999/how-do-i-execute-a-ruby-script-using-vscode
