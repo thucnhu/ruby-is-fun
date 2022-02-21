@@ -12,7 +12,7 @@
 
 Download and run the [RubyInstallers](https://rubyinstaller.org/downloads/) (Devkit version).
 
-Verify your Ruby version by running the following command: `ruby -v`
+Verify your Ruby version by running the following command: `ruby -v`.
 
 ### Set up VSCode
 
