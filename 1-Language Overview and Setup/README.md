@@ -23,9 +23,15 @@ Verify your Ruby version by running the following command: `ruby -v`
 
 -  Create a new file called `hello.rb`
 -  In the file, write the following code: `puts "Hello, World!"`
+-  Type # to make a comment if needed
 -  Run the file by typing `ruby hello.rb` in the terminal
 
 ## Resources to learn Ruby
 
 -  [FreeCodeCamp](https://youtu.be/t_ispmWmdjY)
 -  [CodeCademy](https://www.codecademy.com/learn/learn-ruby)
+
+## References
+
+[1] https://developer.oracle.com/ruby/what-is-ruby/
+[2] https://stackoverflow.com/questions/54917999/how-do-i-execute-a-ruby-script-using-vscode
