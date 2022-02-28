@@ -22,7 +22,7 @@ Verify your Ruby version by running the following command: `ruby -v`.
 ### Run your first program in Ruby
 
 -  Create a new file called `hello.rb`
--  In the file, write the following code: `puts "Hello, World!"`
+-  In the file, write the following code: `puts "Hello, World!"` or `print "Hello, World!"` (The difference between print and puts is that puts adds a new line after the string, while print does not.)
 -  Type # to make a comment if needed
 -  Run the file by typing `ruby hello.rb` in the terminal
 
