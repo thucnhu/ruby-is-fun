@@ -13,10 +13,12 @@ num = "10"
 num.to_i # convert to integer
 
 
-string = "Hello"
-string << " World!" # append to string, same object
-string += " Strings in ruby are mutable" # create a new string object
-puts string.object_id # prints the object id of the string object
+string1 = "Hello"
+string2 = "Hello"
+puts string1.object_id == string2.object_id # true because strings are mutable
+
+string1 << " World!" # append to string, same object
+string1 += " Strings in ruby are mutable" # create a new string object
 
 
 hash = {
@@ -30,8 +32,11 @@ array = [1,2,3,4,5]
 array[0] = "John" # update array, an array can have different data types
 
 
-symbol = :string # symbol is immutable
-symbol.to_s # convert to string
-puts symbol.object_id # symbol is immutable, so object_id is the same
+symbol1 = :hello # symbol is immutable
+symbol2 = :hello
+puts symbol1.object_id == symbol2.object_id # true because symbols are immutable
+
+symbol1.to_s # convert to string
+symbol1.to_sym # convert to symbol
 
 # puts "5" + 6 # error, can't add a string and an integer
