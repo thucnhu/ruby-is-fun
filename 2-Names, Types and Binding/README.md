@@ -4,7 +4,7 @@
 
 Below are the keywords that are used in Ruby. They cannot be used as variable names.
 
-[Ruby keywords](https://res.cloudinary.com/dw5ii3leu/image/upload/v1646308700/Ruby%20is%20fun/keywords-ruby_deaect.png)
+![Ruby keywords](https://res.cloudinary.com/dw5ii3leu/image/upload/v1646308700/Ruby%20is%20fun/keywords-ruby_deaect.png)
 
 ## Naming Requirements and Conventions
 
@@ -21,13 +21,13 @@ It means that the variable type is not declared when the variable is created and
 ## Ruby is strongly typed
 
 ```
-   a = 1
-   b = "1"
-   puts a + b # TypeError: can't convert String into Integer
+a = 1
+b = "1"
+puts a + b # TypeError: can't convert String into Integer
 
-   a = 1.0
-   b = "1"
-   puts a + b # TypeError: can't convert String into Float
+a = 1.0
+b = "1"
+puts a + b # TypeError: can't convert String into Float
 ```
 
 ## Explicit vs Implicit Conversion
@@ -37,23 +37,23 @@ Ruby has both explicit and implicit conversion, but it is implicit in declaratio
 ### Explicit Conversion
 
 ```
-   # From string to integer
-   a = "1"
-   b = 2
-   puts a.to_i + b
+# From string to integer
+a = "1"
+b = 2
+puts a.to_i + b
 
-   # From integer to string
-   a = 1
-   puts "Ben is " a.to_s " years old"
+# From integer to string
+a = 1
+puts "Ben is " a.to_s " years old"
 ```
 
 ### Implicit Conversion
 
 ```
-   # From integer to float
-   a = 1
-   b = 2.0
-   puts a + b
+# From integer to float
+a = 1
+b = 2.0
+puts a + b
 ```
 
 If you accidentally use implicit conversion on any pair of types that is not supported, Ruby will raise an error, for example `no implicit conversion of Symbol into String (TypeError)`.
@@ -80,21 +80,21 @@ If you accidentally use implicit conversion on any pair of types that is not sup
 -  To check for equality in `object_id` use the `.equal?` method.
 
 ```
-   a = 1
-   b = 1
-   puts a == b # true
-   puts a.equal?(b) # true, because primitive variables with the same value have the same object_id
+a = 1
+b = 1
+puts a == b # true
+puts a.equal?(b) # true, because primitive variables with the same value have the same object_id
 
-   x = "Hello"
-   y = "Hello"
-   puts x == y # true
-   puts x.equal?(y) # false, because strings are objects and have different object_ids
+x = "Hello"
+y = "Hello"
+puts x == y # true
+puts x.equal?(y) # false, because strings are objects and have different object_ids
 ```
 
 -  Method `.eq?` returns true if both arguments have the same value and data type.
 
 ```
-   puts 1.eq?(1.0) # false
+puts 1.eq?(1.0) # false
 ```
 
 ## Binding
@@ -106,11 +106,11 @@ Ruby uses a static scope. This means that variables are bound to the scope they 
 Symbols are light-weight strings, preceded by a colon ":". They are used to reference variables and constants, and can be thought of as immutable strings. Since symbols are immutable, those that reference the same internal values also have the same `object_id`. Unlike strings, which are repeatedly created and destroyed when the same object could have been used in their place, symbols take up much less space and have better performance than strings.
 
 ```
-   student = {
-      :name => "Ben",
-      :age => 25,
-      :courses => ["Math", "English"]
-   }
+student = {
+   :name => "Ben",
+   :age => 25,
+   :courses => ["Math", "English"]
+}
 ```
 
 ## References
@@ -124,3 +124,5 @@ Symbols are light-weight strings, preceded by a colon ":". They are used to refe
 [4] https://blog.appsignal.com/2019/01/08/ruby-magic-bindings-and-lexical-scope.html
 
 [5] https://medium.com/@lcriswell/ruby-symbols-vs-strings-248842529fd9#:~:text=Ruby%20symbols%20are%20defined%20as,something%20that%20cannot%20be%20changed.
+
+[6] https://www.geeksforgeeks.org/ruby-data-types/
