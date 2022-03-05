@@ -18,6 +18,12 @@ Below are the keywords that are used in Ruby. They cannot be used as variable na
 
 It means that the variable type is not declared when the variable is created and can be changed later.
 
+```
+x = 10
+x = "hello"
+puts x # print "hello"
+```
+
 ## Ruby is strongly typed
 
 ```
