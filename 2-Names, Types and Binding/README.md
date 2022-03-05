@@ -97,9 +97,22 @@ puts x.equal?(y) # false, because strings are objects and have different object_
 puts 1.eq?(1.0) # false
 ```
 
-## Binding
+## Addresses and Binding
 
-Ruby uses a static scope. This means that variables are bound to the scope they are created in, and cannot be accessed outside of that scope.
+In Ruby, a variable name is bound to a memory address, and different variables with the same value are bound to the same memory reference. This concept is called name binding.
+
+```
+x = 1
+y = 1
+puts x.object_id == y.object_id # true because x and y are bound to the same object
+
+arr1 = [1, 2, 3]
+arr2 = arr1
+arr1.append(4)
+puts arr2 # [1, 2, 3, 4]
+```
+
+`arr1.append(4)` does not rebind `arr1`, but simply mutates `[1, 2, 3]`, which is also bound to `arr2`
 
 ## Symbols - a built-in data type in Ruby
 
