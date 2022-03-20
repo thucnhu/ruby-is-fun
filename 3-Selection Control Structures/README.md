@@ -46,7 +46,9 @@ end
 ```
 
 ```
-# Unless statements execute the code if the condition is false. If the condition is true, the code block in the else clause is executed.
+# Unless statements execute the code if the condition is false.
+# If the condition is true, the code block in the else clause is executed.
+
 x = 1
 unless x > 2
   puts "x is less than or equal to 2"
@@ -56,13 +58,13 @@ end
 # Result: x is less than or equal to 2
 ```
 
-Code blocks under each condition are indented and delimited by the conditional statements.
+Code blocks under each condition are enclosed by indentation.
 
 # Short-circuit evaluation and Operator Precedence
 
 Ruby uses short-circuit evaluation, which means when the first argument of an `AND` function evaluates to false, the second argument is not evaluated and the overall value must be false. Likewise, when the first argument of an `OR` function evaluates to true, the second argument is not evaluated and the overall value must be true.
 
-The `AND` operator in Ruby is `&&` or `and`, `OR` operator is `||` or `or`. However, the precendece of `&&` `||` is different from `and` `or`. Let's take a look at an example:
+The `AND` operator in Ruby is `&&` or `and`, while the `OR` operator is `||` or `or`. However, the precendece of `&&` `||` is different from `and` `or`. Let's take a look at an example:
 
 ```
 result = true and false
@@ -75,7 +77,7 @@ result # => false
 The order in which Ruby operators are evaluated is as follows:
 
 1. `&&`
-2. =
+2. `=`
 3. `and`
 
 So the above example would be evaluated as
@@ -118,5 +120,7 @@ end
 # References
 
 [1] https://www.tutorialspoint.com/ruby/ruby_if_else.htm
+
 [2] https://www.youtube.com/watch?v=t_ispmWmdjY
+
 [3] https://mixandgo.com/learn/ruby/boolean-operator-precedence
