@@ -124,6 +124,13 @@ func_name 1, 2
 func_name(1, 2)
 ```
 
+Likewise, you can call a function with no parameters as:
+
+```
+func_name
+func_name()
+```
+
 You can also pass parameters of different types to a function.
 
 ```
@@ -143,7 +150,7 @@ def func1
    func2
 end
 
-~~func1~~
+func1
 
 def func2
    puts "Hello"
@@ -168,6 +175,8 @@ Ruby does not support returning multiple values/objects from a function. You can
 
 ## Recursive functions
 
+Ruby does support recursive functions.
+
 ```
 def factorial(n)
    if n == 0
@@ -177,10 +186,16 @@ def factorial(n)
    end
 end
 
-factorial(5)
+puts factorial(5)
 ```
 
-## Pass-by value
+Output:
+
+```
+120
+```
+
+## Pass-by value(-ish)
 
 Ruby is strictly pass-by-value, but the values it passes are references. Therefore, any operations that affect the object will be reflected in the original object. However, as soon as you assign a new object to the variable passed in, it no longer references the original object. Let's take a look at an example
 
@@ -218,7 +233,7 @@ Output:
 Hi
 ```
 
-Unlike the previous example, the output here is `Hi` because the string object `str` is assigned a new object, which makes it detached from the original object. Therefore, the original object remains the same.
+Unlike the previous example, the output here is `Hi` because the string object `str` is assigned a new object, which makes it detached from the original object. Therefore, the original object remains unchanged.
 
 ## References
 
