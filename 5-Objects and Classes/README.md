@@ -192,7 +192,7 @@ end
 Test.sum(1,2)
 ```
 
-Output
+Output:
 
 ```
 `sum': wrong number of arguments (given 2, expected 3) (ArgumentError)
@@ -214,7 +214,7 @@ end
 Test.sum(1,2,7)
 ```
 
-Output
+Output:
 
 ```
 10
@@ -231,3 +231,5 @@ Output
 [4] https://ruby-doc.org/core-3.1.1/BasicObject.html
 
 [5] https://www.geeksforgeeks.org/method-overloading-in-ruby/
+
+[6] geeksforgeeks.org/ruby-mixins/
