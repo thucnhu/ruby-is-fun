@@ -62,7 +62,7 @@ car1.setModel("Fiesta")
 puts car1.getModel()
 ```
 
-# Access control
+## Access control
 
 Ruby provides 3 levels of protection: private, protected and public.
 
