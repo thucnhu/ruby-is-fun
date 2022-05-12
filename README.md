@@ -1,3 +1,3 @@
-# Welcome to my learning Ruby journey!
+# Let's learn some Ruby!
 
-This project captures my learning journey with Ruby. It is consisted of 9 modules (TBU), each includes a README and Ruby codes (if any).
+This repo contains my learning notes for Ruby, consisting of 5 modules, each includes a README and Ruby codes (if any).
